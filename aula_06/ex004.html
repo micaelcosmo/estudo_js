@@ -12,6 +12,12 @@
         document.write(`<h2>Seu texto tem <strong>${String(text1.length)}</strong> caracteres`)
         window.alert(`Em maiúscula: ${text1.toUpperCase()}
                     Em minúscula: ${text1.toLowerCase()}`)
+
+        var n1 = Number.parseFloat(window.prompt('Valor em float:'))
+        document.write(`${n1.toFixed(2)}<br>`)
+        document.write(`${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}<br>`)
+        document.write(`${n1.toLocaleString('en-US', {style: 'currency', currency: 'USD'})}<br>`)
+        document.write(`${n1.toLocaleString('en-US', {style: 'currency', currency: 'EUR'})}`)
     </script>
 </body>
 </html>
